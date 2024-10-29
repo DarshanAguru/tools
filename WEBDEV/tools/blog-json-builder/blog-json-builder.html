@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog JSON Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" overflow-hidden container bg-[#040404]">
+    <div class="m-2 h-screen flex flex-col gap-10 items-center">
+        <h1 class="text-white text-5xl font-bold"> Blog JSON Builder </h1>
+        <button class="absolute text-white top-10 right-10 border border-1 border-white rounded-lg p-2 hover:shadow-[0_0_8px_1px_rgba(255,255,255,0.8)] bg-[#3f3f3f]" id="help">Help?</button>
+        <div class="h-full w-full">
+        <div class="flex-col flex m-1 p-1 w-full h-full gap-2 items-center">
+            <div class="w-5/6 h-5/6 flex  items-center">
+                <textarea  id="inputText" autocomplete required style="resize: none" placeholder="Enter your text here... (click on help for further instructions )" class="overflow-auto border w-full h-full bg-[#0e0e0e] border-white rounded-md text-gray-300 mt-2 p-4 text-md"></textarea>
+            </div>
+            <button id="process" class="bg-[#3f3f3f] mt-4 w-32 rounded-md p-2 hover:cursor-pointer text-white border border-white hover:shadow-[0_0_6px_-1px_rgba(255,255,255,0.75)]">Process</button>
+        </div>
+    </div>
+    </div>
+
+    <script type="module" src="blogprocessor.js"></script>
+</body>
+</html>
