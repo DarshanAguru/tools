@@ -12,9 +12,12 @@ toolsList.forEach(tool => {
     var cardLink = document.createElement("a");
     cardLink.classList.add("text-cyan-400", "hover:tracking-widest", "hover:font-semibold","duration-150", "ease-out","hover:ease-in");
     cardLink.href = tool.href;
+    cardLink.target = "_blank";
     cardLink.innerText = "Have a look?";
     card.appendChild(cardHeader);
     card.appendChild(cardDescription);
     card.appendChild(cardLink);
     cards.appendChild(card);
 });
+
+// copyright 2024 by Aguru Darshan

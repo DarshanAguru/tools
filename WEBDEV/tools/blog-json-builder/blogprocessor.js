@@ -123,15 +123,13 @@ const processText = (data)=>{
         `<a class="blogLink" href="$1">$1</a>`
       );
     return JSON.stringify(res);
-}catch(e){
+}
+catch(e)
+{
 console.log(e);
 return null;
 }
 
-    // res.content = res.content.replace(new RegExp(`\\$${command}:\\s?(.*)\\s?\$${command}`, "g"), `<img class="blogImage" src="$1"/>`);
-    //res.content = res.content.replace(new RegExp(`\\$${command}:\\s?(.*)\\s?\$${command}`, "g"), `<a class="blogLink" href="$1">$1</a>`);
-
-    
 }
 
 
@@ -148,6 +146,10 @@ process.addEventListener("click", function() {
         return;
     }
     var processed = processText(inputText);
+    if(processed === null){
+        alert("Error processing text");
+        return;
+    }
     document.getElementById("inputText").value = `${processed}`;
     document.getElementById("inputText").setAttribute("readonly", true);
     var btn = document.getElementById("process");
@@ -162,3 +164,5 @@ process.addEventListener("click", function() {
     
 
 });
+
+// copyright 2024 by Aguru Darshan
