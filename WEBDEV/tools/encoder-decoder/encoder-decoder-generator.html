@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En-Dec-Gen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class=" overflow-hidden container bg-[#040404]">
+    
+    <div class="m-2 h-screen flex flex-col gap-10 items-center">
+        <h1 class="text-white text-5xl font-bold">Encode-Decode-Generator</h1>
+        <button class="absolute text-white top-10 right-10 border border-1 border-white rounded-lg p-2 hover:shadow-[0_0_8px_1px_rgba(255,255,255,0.8)] bg-[#3f3f3f]" id="help">Help?</button>
+        <div class="h-full w-full">
+        <div class="flex flex-col p-4 w-full h-full mt-8">
+            <div class="flex w-full h-full justify-around">
+            <div class="w-1/3 h-2/3 flex  items-center">
+                <textarea  id="inputText" autocomplete required style="resize: none" placeholder="Paste/Enter your text here... (click on help for further instructions)" class="overflow-auto border w-full h-full bg-[#0e0e0e] border-white rounded-md text-gray-300 mt-2 p-4 text-md"></textarea>
+            </div>
+            <div class="flex flex-col  h-1/4 justify-between">
+                <div class="flex-col flex w-full h-full gap-2">
+                <select id="selectBox" default="select" class="pl-6 pr-6 pt-2 pb-2 rounded-md hover:cursor-pointer  w-full  bg-[#0e0e0e] border border-white text-white">
+                </select>
+                    <div id="otherOptions" class="flex flex-col gap-2 h-full"></div>
+                </div>
+                <button id="process" class="bg-[#3f3f3f] mt-4 w-42 rounded-md p-2 hover:cursor-pointer font-bold text-white border border-white hover:shadow-[0_0_6px_-1px_rgba(255,255,255,0.75)]">Encode</button>
+            </div>
+            <div class="w-1/3 h-2/3 flex  items-center">
+                <button id="cpybtn" class="hidden relative -top-1/2 left-full bg-[#6f6f6f] hover:border hover:border-white hover:cursor-pointer p-2 rounded-lg text-white h-8 w-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"/></svg></button>
+                <textarea  id="outputText" style="resize: none" readonly placeholder="Output will be generated here... (Click in this area to copy output)" class="overflow-auto border w-full h-full bg-[#0e0e0e] hover:cursor-pointer border-white rounded-md text-gray-300 mt-2 p-4 text-md"></textarea>
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p class="text-gray-400 w-full text-sm absolute bottom-1 flex justify-center">
+            Copyright 2024 by Aguru Darshan
+        </p>
+    </footer>
+    <script type="module" src="encoder-decoder-generator.js"></script>
+</body>
+<!--  copyright 2024 by Aguru Darshan-->
+</html>

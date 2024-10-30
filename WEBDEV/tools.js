@@ -5,6 +5,13 @@ const toolsList = [
         location: "./tools/blog-json-builder",
         description: "A tool to build a json file for blogging purposes", 
         href: "./tools/blog-json-builder/blog-json-builder.html"
+    },
+    {
+        id: 2,
+        name: "encoder-decoder-generator",
+        location: "./tools/encoder-decoder",
+        description: "A tool to encode and decode text or generate a hash-digest or uuid from given text",
+        href: "./tools/encoder-decoder/encoder-decoder-generator.html"
     }
 ]
 
