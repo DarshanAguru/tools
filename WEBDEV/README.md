@@ -6,9 +6,9 @@ url : https://darshanaguru.github.io/tools/
 
 ## Tools
 
-1. Blog JSON Builder - [Blog JSON Builder](https://darshanaguru.github.io/tools/tools/blog-json-builder/blog-json-builder.html)
+1. Blog JSON Builder - [Blog JSON Builder](https://github.com/DarshanAguru/tools/tree/main/WEBDEV/tools/blog-json-builder)
 
-2. Encoder-Decoder-Generator - [Encoder-Decoder-Generator](https://darshanaguru.github.io/tools/tools/encoder-decoder/encoder-decoder-generator.html)
+2. Encoder-Decoder-Generator - [Encoder-Decoder-Generator](https://github.com/DarshanAguru/tools/tree/main/WEBDEV/tools/encoder-decoder)
 
 
 ## License               
