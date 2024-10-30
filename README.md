@@ -1,7 +1,7 @@
 # tools
 
-Just a fun repo consisting the tools I use or which I created just for fun 😉.
-Feel free to explore...
+Just a fun repo consisting the tools I use or which I created just for fun 😉.<br>
+Feel free to explore...<br>
 link for webdev tools : https://darshanaguru.github.io/tools/
 
 ## 🚀 About Me
