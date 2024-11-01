@@ -59,7 +59,7 @@ selectionBox.addEventListener("change", function() {
     else{
         ele.setAttribute("placeholder", "Paste/Enter your text here... (click on help for further instructions)");
         ele.setAttribute("autocomplete", "on");
-        ele.setAttribute("readonly", "false");
+        ele.removeAttribute("readonly");
     }
     btn.innerText = `${selected.split("-")[0]}`;
 });
