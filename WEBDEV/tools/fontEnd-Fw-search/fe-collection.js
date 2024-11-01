@@ -60,17 +60,17 @@ window.onload = function() {
 
 
 const search = (searchText, kw)=>{
-    var res = [];
+    var res = new Set();
     searchText = searchText.split(" ");
     fwDataList.forEach(fw => {
        if(searchText.some(word=> (word.trim() === "")?false:fw.cat.split("-").some(c=> c.toLowerCase().startsWith(word.trim().toLowerCase())))){
-           res.push(fw);
+           res.add(fw);
        }
        if(searchText.some(word=> (word.trim() === "")?false:fw.name.trim().toLowerCase().startsWith(word.trim().toLowerCase()))){
-           res.push(fw);
+           res.add(fw);
        }
     });
-    return res;
+    return Array.from(res);
 }
 
 const searchFromData = async (searchText)=>{
