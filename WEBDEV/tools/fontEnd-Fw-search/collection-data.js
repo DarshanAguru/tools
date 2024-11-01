@@ -189,3 +189,18 @@ documentation: "https://vuejs.org/guide/introduction.html",
 }
 
 export {fwDataList, fwContentData};
+
+
+// copyright 2024 by Aguru Darshan
+// Attribution to : 
+// Tailwind CSS 
+// Chakra UI
+// Bootstrap
+// Material UI
+// shadcn UI
+// Uiverse
+// Flowbite
+// Next.js
+// Vue.js
+// Vite
+// All rights are reserved by the respective owners of the above mentioned frameworks.

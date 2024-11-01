@@ -13,6 +13,9 @@ url : https://darshanaguru.github.io/tools/
 3. FrontEnd Collection - [FrontEnd Collection](https://github.com/DarshanAguru/tools/tree/main/WEBDEV/tools/front-end-collection)
 
 
+## Attribution
+All rights to external resources used in this project are reserved by their respective owners. Attribution for each resource is provided as comments within the relevant code files, where applicable.
+
 ## License               
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/aguru-darshan/webdev-tools/blob/main/LICENSE) file for details

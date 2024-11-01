@@ -1,4 +1,4 @@
-# tools
+# Tools
 
 Just a fun repo consisting the tools I use or which I created just for fun 😉.<br>
 Feel free to explore...<br>
