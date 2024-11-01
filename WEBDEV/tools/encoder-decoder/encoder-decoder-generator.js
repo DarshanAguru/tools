@@ -93,7 +93,9 @@ button.addEventListener("click", function() {
 
 const formatMap = {
     'Encode-base64' : (data)=>{
-        return btoa(data);
+        var words = CryptoJS.enc.Utf8.parse(data); 
+        var base64 = CryptoJS.enc.Base64.stringify(words);
+        return base64; 
     },
     'Encode-hex' : (data)=>{
         return data.split('').map(function(x) {
@@ -107,15 +109,9 @@ const formatMap = {
         return data.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     },
     'Decode-base64' : (data)=>{
-        const op = atob(data);
-        for (var c of op)
-        {
-            if (!(c.match(/[A-Za-z0-9\+\/]/)))
-            {
-                return null;
-            }
-        }
-        return op;
+        var words = CryptoJS.enc.Base64.parse(data);
+        var utf8 = CryptoJS.enc.Utf8.stringify(words);
+        return utf8;
     },
     'Decode-hex' : (data)=>{
         
