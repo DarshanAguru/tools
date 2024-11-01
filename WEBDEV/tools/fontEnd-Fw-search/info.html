@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        /* copyright 2024 by Aguru Darshan */
+#main::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #8f8f8f;
+}
+
+#main::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#main::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #3f3f3f;
+}
+    </style>
+</head>
+<body class="overflow-hidden h-full w-full m-1  bg-[#040404]">
+    <button onclick="window.history.back()" class="absolute text-white top-10 left-10 font-bold p-1 hover:shadow-[0_0_4px_0px_rgba(255,255,255,0.75)] rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" height="25" viewBox="0 0 1080 1080" xml:space="preserve">
+        <defs>
+        </defs>
+        <g transform="matrix(1 0 0 1 540 540)" id="b775b8d1-d199-44cf-8420-bab62473c890"  >
+        <rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+        </g>
+        <g transform="matrix(1 0 0 1 540 540)" id="d2913ac5-c20a-4405-ae40-a58ef7fccd28"  >
+        </g>
+        <g transform="matrix(33.75 0 0 33.75 540 540)" id="Layer_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  transform=" translate(-16, -16)" d="M 28 14 L 8.8 14 L 13.420000000000002 9.379999999999999 C 13.814 8.986 14 8.516 14 8 C 14 7.016 13.187 6 12 6 C 11.469 6 11.006 6.193 10.620000000000001 6.58 L 2.662000000000001 14.538 C 2.334 14.866 2 15.271 2 16 C 2 16.729 2.279 17.08 2.646 17.447 L 10.620000000000001 25.419999999999998 C 11.006 25.807 11.469 26 12 26 C 13.188 26 14 24.984 14 24 C 14 23.484 13.814 23.014 13.42 22.62 L 8.8 18 L 28 18 C 29.104 18 30 17.104 30 16 C 30 14.896 29.104 14 28 14 z" stroke-linecap="round" />
+        </g>
+        </svg>
+    </button>
+    
+        <div class="h-[100vh] w-[100vw] m-1 fixed top-20 left-50 ">
+        <div class="h-full w-full flex justify-center align-middle">
+            <div id="main" class="flex p-4 w-[80%] h-[80%] overflow-auto bg-[#1f1f1f] shadow-[0_0_6px_1px_rgba(255,255,255,0.3)] rounded-lg">
+                <div class="flex flex-col w-full h-full gap-2 p-2 align-middle">
+                    <div  class="flex justify-center w-full align-middle">
+                        <p id="title" class="text-white text-3xl font-bold  underline underline-offset-2"></p>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full  h-[80%] p-2">
+                        <p class="text-white font-semibold w-full tracking-wide text-md">Installation</p>
+                        <p id="instDesc" class="w-full h-max bg-[#0e0e0e] rounded-md p-2 text-white text-sm"></p>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full  h-[80%] p-2">
+                        <p class="text-white font-semibold w-full tracking-wide text-md">Example Usage</p>
+                        <p id="usageDesc" class="w-full h-max bg-[#0e0e0e] rounded-md p-2 text-white text-sm"></p>
+                    </div>
+                    
+                    <div class="flex flex-col gap-2 w-full  h-[80%] p-2">
+                        <p class="text-white font-semibold w-full tracking-wide text-md">Documentation</p>
+                        <div id="docsUrl" class="w-full h-max bg-[#0e0e0e] rounded-md p-2"></div>
+                    </div>
+                    
+                    <div id="cdn" class="flex flex-col gap-2 w-full  h-[80%] p-2">
+                        <p class="text-white font-semibold w-full tracking-wide text-md">CDN</p>
+                        <p id="cdnDesc" class="w-full h-max bg-[#0e0e0e] rounded-md p-2 text-white text-sm"></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+   
+    <footer>
+        <p class="text-gray-400 w-full text-sm absolute bottom-1 flex justify-center">
+            Copyright 2024 by Aguru Darshan
+        </p>
+    </footer>
+    <script type="module" src="info.js"></script>
+</body>
+<!--  copyright 2024 by Aguru Darshan-->
+</html>
