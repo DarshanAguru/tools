@@ -12,6 +12,13 @@ const toolsList = [
         location: "./tools/encoder-decoder",
         description: "A tool to encode and decode text or generate a hash-digest or uuid from given text",
         href: "./tools/encoder-decoder/encoder-decoder-generator.html"
+    },
+    {
+        id: 3,
+        name: "front-end collection",
+        location: "./tools/front-end-collection",
+        description: "A collection of front-end tools",
+        href: "./tools/fontEnd-Fw-search/fe-collection.html"
     }
 ]
 

@@ -10,6 +10,8 @@ url : https://darshanaguru.github.io/tools/
 
 2. Encoder-Decoder-Generator - [Encoder-Decoder-Generator](https://github.com/DarshanAguru/tools/tree/main/WEBDEV/tools/encoder-decoder)
 
+3. FrontEnd Collection - [FrontEnd Collection](https://github.com/DarshanAguru/tools/tree/main/WEBDEV/tools/front-end-collection)
+
 
 ## License               
 
