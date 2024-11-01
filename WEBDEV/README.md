@@ -14,7 +14,9 @@ url : https://darshanaguru.github.io/tools/
 
 
 ## Attribution
+
 All rights to external resources used in this project are reserved by their respective owners. Attribution for each resource is provided as comments within the relevant code files, where applicable.
+
 
 ## License               
 
